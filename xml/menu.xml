@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE menu SYSTEM "menu.dtd">
+
+
+<menu>
+    <meal>
+        <name>Beetroot and Feta Salad</name>
+        <price>15.00</price>
+        <description>Suitable for vegetarians, made with fresh beetroot</description>
+        <image>beetroot_salad.jpg</image>
+    </meal>
+
+
+ <meal>
+        <name>Sourdough Rye Sandwich </name>
+        <price>15.00</price>
+        <description>Cheese and salad sandwich made with organic, sourdough rye bread</description>
+        <image>Sourdough_Rya_Sandwich.jpg</image>
+    </meal>
+
+
+ <meal>
+        <name>Spinach Pie and Salad</name>
+        <price>15.00</price>
+        <description>Suitable for vegetarians, made with fresh beetroot</description>
+        <image>beetroot_salad.jpg</image>
+    </meal>
+
+
+ <meal>
+        <name>Feta pancakes with salad</name>
+        <price>15.00</price>
+        <description>Suitable for vegetarians, made with fresh beetroot</description>
+        <image>beetroot_salad.jpg</image>
+    </meal>
+
+
+<!-- Beverages Section -->
+   <beverages>
+        <coffee>
+            <size>Small</size>
+            <price>3.50</price>
+            <description>For coffee, please inform the staff of the coffee type</description>
+        </coffee>
+        <coffee>
+            <size>Regular</size>
+            <price>4.00</price>
+        </coffee>
+        <coffee>
+            <size>Large</size>
+            <price>4.50</price>
+        </coffee>
+    </beverages>
+
+
+
+    <!-- Other Beverages Section -->
+
+    <other_beverages>
+
+
+        <beverage>
+            <name>Soda</name>
+            <price>3.00</price>
+        </beverage>
+
+        <beverage>
+            <name>Fresh juice</name>
+            <price>6.00</price>
+        </beverage>
+
+        <beverage>
+            <name>Bottled water</name>
+            <price>2.00</price>
+        </beverage>
+
+
+    </other_beverages>
+
+
+</menu>
