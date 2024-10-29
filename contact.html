@@ -10,15 +10,13 @@
 
     <!-- Navigation Section -->
     <nav>
-        <a href="index.html"><img src="images/logo.png" alt="Bryan's Café Logo"></a>
-        <ul class="center-nav">
-            <li><a href="index.html">About</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    
+    <a href="index.html"><img src="images/logo.png" alt="Bryan's Café Logo"></a>
+    <ul id="nav-menu" class="center-nav">
+        <li><a href="index.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>    
 
     <!-- Branch Information -->
 
@@ -73,7 +71,8 @@
         <h2>[ Contact Us ]</h2>
     </div>
 
-        <form id="enquiry-form">
+      <form id="enquiry-form" onsubmit="return showNotification()">
+
             <label for="first-name">First Name</label>
             <input type="text" id="first-name" name="first-name" required>
 
@@ -89,16 +88,26 @@
             <label for="message">Message Body</label>
             <textarea id="message" name="message" required></textarea>
 
-            <button type="submit">Submit</button>
-        </form>
+    
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+function showNotification() {
+    alert("Thank you for your submission! We will get back to you shortly.");
+    return false; // Prevent actual form submission for demonstration
+}
+</script>
+
 
         <p id="form-notification"></p>
     </section>
 
     <!-- Footer Section -->
+
     <footer>
-        <p id="footer-text"></p>
-        <a href="privacy.html" target="_blank">Privacy Policy</a>
+    <p>&copy; 2024, Bryans Cafe</p>
+    <a href="privacy-policy.html">Privacy Policy</a>
     </footer>
 
     <script src="js/footer.js"></script>
