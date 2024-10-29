@@ -1,0 +1,6 @@
+<!ELEMENT branches (branch+)> <!-- Root element contains one or more branch elements -->
+<!ELEMENT branch (name, address, phone, hours)> <!-- Each branch contains name, address, phone, and hours elements -->
+<!ELEMENT name (#PCDATA)> <!-- Branch name is parsed character data -->
+<!ELEMENT address (#PCDATA)> <!-- Branch address is parsed character data -->
+<!ELEMENT phone (#PCDATA)> <!-- Branch phone is parsed character data -->
+<!ELEMENT hours (#PCDATA)> <!-- Branch hours is parsed character data -->
