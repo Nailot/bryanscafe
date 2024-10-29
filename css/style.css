@@ -34,7 +34,7 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    gap: 30px;
+    gap: 10px;
     margin-left: auto; 
 }
 
@@ -44,6 +44,8 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
+
+
 
 
 /* Banner Section */
@@ -169,7 +171,6 @@ nav ul li a {
 }
 
 
-
 /* Menu Section */
 
 /* Menu title texts */
@@ -260,11 +261,13 @@ form {
     margin-left: auto; 
     margin-right: auto; 
     border-radius: 5px;
+    font-family: 'Arial', sans-serif;
 }
 
 form label {
     margin-top: 10px;
     color: white;
+    font-family: 'Arial', sans-serif;
 }
 
 form input, form textarea {
@@ -272,6 +275,7 @@ form input, form textarea {
     margin-top: 5px;
     border: 1px solid #555;
     border-radius: 5px;
+    font-family: 'Arial', sans-serif;
     background-color: #1a1a1a;
     color: white;
 }
@@ -280,10 +284,12 @@ form button {
     margin-top: 15px;
     padding: 10px 20px;
     background-color: #00ccff;
-    color: white;
+    color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase; 
 }
 
 /*contact framed block*/
@@ -334,40 +340,135 @@ form button {
     margin-left: 20px;
 }
 
+                                  /* MOBILE */
+
+                        /* General Mobile Styles */
+body {
+     align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Ensure the content adjusts for small screens */
+.container {
+    max-width: 100%;
+    padding: 0 20px; /* Add padding to prevent content from touching the edges */
+}
+
+/* Branch Info Section */
+/* Branch Section - General */
+.branch {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #2e2e2e;
+    margin-bottom: 20px;
+}
+
+/* Branch Info Layout - Side by Side */
+.branch-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column; /* Stack the address, map, and image vertically */
+    flex-grow: 1;
+    max-width: 60%; 
+    max-width: 250px;
+}
+
+                    /* Images */
+.branch img {
+    max-width: 250px;
+    height: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+                       /* Maps */
+.branch-info iframe {
+    width: 100%;
+    max-width: 250px;
+    margin-left: 20px;
+    height: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    margin-top: 10px;
+}
+
+/* Mobile Version - Side by Side Layout */
 @media (max-width: 768px) {
     .branch {
+    }
+
+    .branch-info {
+        flex-direction: column; /* Stack the address, image, and map for better display on mobile */
+        align-items: center;
         flex-direction: column;
         text-align: center;
     }
 
-    .branch-info {
-        max-width: 100%;
-        margin-bottom: 20px;
+    .branch img {
+        margin-bottom: 10px; /* Add space between image and map vertically */
+        width: 100%; /* Let the image take full width in small screens */
     }
 
-    .branch-image {
+    .branch-info iframe {
+        width: 100%; /* Ensure the map is full-width on mobile */
+        height: 200px; /* Keep the map size manageable */
+    }
+}
+: 150px; /* Set a reasonable height for mobile */
+    }
+
+
+    /* Ensure the form is responsive */
+    form {
+        width: 100%;
         max-width: 100%;
+        padding: 10px;
+    }
+
+    form input, form textarea, form button {
+        width: 100%;
+        margin-bottom: 10px; /* Add some space between form fields */
     }
 }
 
-/* Branch Info Section */
-.branch-info {
-    display: flex;
-    flex-direction: column;
-    align-items: right; /* Centers the map and text horizontally */
-    margin-left: 60px;
+
+/* Privacy Policy Styles */
+
+.privacy-policy {
+    padding: 40px 20px;
+    background-color: #1a1a1a; /* Blackish-grey background */
 }
 
-/* Center the iframe (Google Maps) */
-.branch-info iframe {
-    margin-top: 10px;
-    margin-bottom: 10px;
+.privacy-policy-framed-block {
+    border: 2px solid #333941; /* Border color */
+    padding: 20px; /* Padding for the content */
+    border-radius: 10px; /* Rounded corners */
+    background-color: rgba(46, 46, 46, 0.7); /* Slightly transparent background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Centering */
 }
 
+.privacy-policy h1, .privacy-policy h2 {
+    color: white; /* White text for headings */
+    margin-bottom: 15px; /* Space below headings */
+}
+
+.privacy-policy p, .privacy-policy ul {
+    color: white; /* White text for paragraphs and lists */
+    margin-bottom: 15px; /* Space below paragraphs */
+}
 
 /* Footer */
-
-
 
 footer {
     background-color: #333;
